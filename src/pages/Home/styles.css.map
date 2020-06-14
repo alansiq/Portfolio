@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACMA,OAAO,CAAC,qIAAI",
+    "sources": [
+        "styles.scss",
+        "../../config/css/_var.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}

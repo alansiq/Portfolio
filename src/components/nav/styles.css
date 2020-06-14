@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500;600&family=Lustria&family=Hind+Guntur&display=swap");
+#nav {
+  z-index: 10;
+  position: fixed;
+  padding: 10px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#nav #nav-logo {
+  padding-left: 1rem;
+  font-family: "Hind Guntur", sans-serif;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+#nav #nav-logo:before {
+  content: 'AS';
+  white-space: nowrap;
+  position: absolute;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  top: 25%;
+}
+
+#nav #nav-logo:hover {
+  opacity: 1;
+}
+
+#nav #nav-logo:hover:before {
+  content: 'Alan Siqueira';
+}
+
+@media (max-width: 576px) {
+  #nav #nav-logo:before {
+    content: 'AS';
+  }
+}
+
+#nav #nav-container {
+  padding: 16px;
+  height: 100%;
+  width: 60vw;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+  background-color: rgba(16, 18, 30, 0);
+  border-radius: 8px;
+}
+
+#nav #nav-container ul {
+  display: inline;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+#nav #nav-container ul li {
+  display: inline;
+}
+
+#nav #nav-container:hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  background-color: #11121B;
+  -webkit-box-shadow: 0px 16px 22px rgba(16, 18, 30, 0.64);
+          box-shadow: 0px 16px 22px rgba(16, 18, 30, 0.64);
+}
+
+#nav #nav-link-ul li {
+  margin-right: 1.5rem;
+}
+
+#nav #nav-link-ul a {
+  text-decoration: none;
+  position: relative;
+}
+
+#nav #nav-link-ul a:before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #EF233C;
+  opacity: 0;
+  bottom: -5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#nav #nav-link-ul a:hover {
+  color: #F8F2F0;
+  text-decoration: none;
+  opacity: 1;
+}
+
+#nav #nav-link-ul a:hover:before {
+  background-color: #EF233C;
+  width: 100%;
+  opacity: 1;
+}
+
+#nav #nav-link-ul a.active:before {
+  background-color: #EF233C;
+  width: 100%;
+  opacity: 1;
+}
+
+#nav #nav-social-wrapper {
+  border-left: 2px dotted #313550;
+}
+
+#nav #nav-social-wrapper a {
+  margin-left: 0.5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+#nav #nav-social-wrapper a:nth-child(1) {
+  margin-left: 1.5rem;
+}
+
+#nav #nav-social-wrapper a:hover {
+  color: #EF233C;
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#nav #nav-hamburguer {
+  display: none;
+  cursor: pointer;
+}
+
+#nav #nav-hamburguer .div1 {
+  width: 25px;
+  height: 2px;
+  background-color: #F8F2F0;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+#nav #nav-hamburguer .div2 {
+  width: 25px;
+  height: 2px;
+  background-color: #F8F2F0;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+#nav .nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  #nav #nav-hamburguer {
+    position: absolute;
+    display: block;
+    padding: 4px;
+    right: 0;
+    top: 0;
+    display: block;
+  }
+  #nav ul {
+    display: none !important;
+  }
+  #nav ul li a {
+    opacity: 0;
+    -webkit-transition: all 1s !important;
+    transition: all 1s !important;
+  }
+  #nav:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #313550;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  #nav.nav-mobile-open:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #313550;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  #nav.nav-mobile-open #nav-container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #nav.nav-mobile-open #nav-container #nav-logo {
+    display: none;
+  }
+  #nav.nav-mobile-open #nav-container ul {
+    display: block !important;
+    opacity: 1;
+    -webkit-transition: opacity 0.1s;
+    transition: opacity 0.1s;
+  }
+  #nav.nav-mobile-open #nav-container ul li {
+    text-align: center;
+    display: block;
+    margin-right: 0;
+    padding-top: 20px;
+    font-size: 1.5rem;
+    opacity: 1;
+  }
+  #nav.nav-mobile-open #nav-container ul li a {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    opacity: 1;
+  }
+  #nav.nav-mobile-open #nav-container #nav-social-ul {
+    border-left: 0;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #nav.nav-mobile-open #nav-container #nav-social-ul li {
+    padding: 1rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,1 +1,144 @@
 @import '../../config/css/var';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#hero {
+    background: $bggradient;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        .styles_typicalWrapper__1_Uvh {
+            font-family: $headingfont;
+            font-size: 2em;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    }
+
+
+    h1 {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    strong {
+        color: $accentcolor;
+    }
+}
+
+#about {
+    padding-top: 80px;
+
+
+    .about_title {
+        position: relative;
+        
+        &::before {
+            position: absolute;
+            content: 'Alan Siqueira';
+            color: rgba(0, 0, 0, 0);
+            font-size: 15vw;
+            top: -0.6em;
+            background: linear-gradient(180deg, #303243 0%, #1F2233 100%);
+            background-clip: text;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        &::after {
+            position: absolute;
+            content: 'Dev & Designer';
+            color: rgba(0, 0, 0, 0);
+            background: linear-gradient(180deg, #303243 0%, #1F2233 100%);
+            background-clip: text;
+            opacity: 0.3;
+            z-index: -1;
+            left: 0;
+            bottom: -1em;
+        }
+
+    }
+
+    .about_content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap-reverse;
+
+        .about_content_textWrapper {
+            max-width: 50%;
+
+            .about_content_textWrapper__title {
+                font-size: 3rem;
+                margin-top: 2rem;
+            }
+            
+        }
+    }
+
+    .about_content_textWrapper__subtitleContainer {
+        position: relative;
+        display: flex;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        
+      
+        .about_content_textWrapper__subtitle{
+            position: relative;
+            font-size: 1.8rem;
+            margin-right: 16px;
+            transition: all 0.1s;
+            cursor: pointer;
+
+
+            &::before {
+                position: absolute;
+                content: '';
+                width: 0%;
+                height: 4px;
+                background: $accentcolor;
+                bottom: 0;
+                transition: all 0.1s;
+            }
+
+            &.subtitle__active {
+                &::before {
+                    width: 100%;
+                }
+            }
+
+            &:hover {
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+
+        
+
+    }
+
+    .subtitle__active {
+        &::before {
+            width: 100%;
+        }
+    }
+
+    .about_content_textWrapper__text {
+        margin-top: 4px;
+        font-size: 1.2rem;
+    }
+
+}
+

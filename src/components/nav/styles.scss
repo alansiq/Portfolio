@@ -19,7 +19,7 @@
         font-size: 1.5rem;
 
         &:before {
-            content: 'AS';
+            content: '< AS / >';
             white-space: nowrap;
             position: absolute;
             transition: all 1s;
@@ -30,14 +30,14 @@
             opacity: 1;
 
             &:before {
-                content: 'Alan Siqueira';
+                content: '< Alan Siqueira / >';
             }
         }
 
         @media (max-width: $breakpoint-sm) {
             
             &:before {
-                content: 'AS';
+                content: '< AS / >';
             }
         }
     }

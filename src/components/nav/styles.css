@@ -25,7 +25,7 @@
 }
 
 #nav #nav-logo:before {
-  content: 'AS';
+  content: '< AS / >';
   white-space: nowrap;
   position: absolute;
   -webkit-transition: all 1s;
@@ -38,12 +38,12 @@
 }
 
 #nav #nav-logo:hover:before {
-  content: 'Alan Siqueira';
+  content: '< Alan Siqueira / >';
 }
 
 @media (max-width: 576px) {
   #nav #nav-logo:before {
-    content: 'AS';
+    content: '< AS / >';
   }
 }
 

@@ -1,2 +1,13 @@
 @import './config/css/var';
 @import './config/css/main';
+
+$lgmargin: 180px;
+
+@media (min-width: $breakpoint-md) {
+    body {
+        section {
+            padding-left: $lgmargin;
+            padding-right: $lgmargin;
+        }
+    }
+}

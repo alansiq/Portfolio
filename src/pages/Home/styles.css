@@ -1,2 +1,148 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500;600&family=Lustria&family=Hind+Guntur&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1D1E2B), to(#11121B));
+  background: linear-gradient(180deg, #1D1E2B 0%, #11121B 100%);
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#hero .container .styles_typicalWrapper__1_Uvh {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#hero h1 {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#hero strong {
+  color: #EF233C;
+}
+
+#about {
+  padding-top: 80px;
+}
+
+#about .about_title {
+  position: relative;
+}
+
+#about .about_title::before {
+  position: absolute;
+  content: 'Alan Siqueira';
+  color: rgba(0, 0, 0, 0);
+  font-size: 15vw;
+  top: -0.6em;
+  background: -webkit-gradient(linear, left top, left bottom, from(#303243), to(#1F2233));
+  background: linear-gradient(180deg, #303243 0%, #1F2233 100%);
+  background-clip: text;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+#about .about_title::after {
+  position: absolute;
+  content: 'Dev & Designer';
+  color: rgba(0, 0, 0, 0);
+  background: -webkit-gradient(linear, left top, left bottom, from(#303243), to(#1F2233));
+  background: linear-gradient(180deg, #303243 0%, #1F2233 100%);
+  background-clip: text;
+  opacity: 0.3;
+  z-index: -1;
+  left: 0;
+  bottom: -1em;
+}
+
+#about .about_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+#about .about_content .about_content_textWrapper {
+  max-width: 50%;
+}
+
+#about .about_content .about_content_textWrapper .about_content_textWrapper__title {
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+#about .about_content_textWrapper__subtitleContainer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+#about .about_content_textWrapper__subtitleContainer .about_content_textWrapper__subtitle {
+  position: relative;
+  font-size: 1.8rem;
+  margin-right: 16px;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+#about .about_content_textWrapper__subtitleContainer .about_content_textWrapper__subtitle::before {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 4px;
+  background: #EF233C;
+  bottom: 0;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+#about .about_content_textWrapper__subtitleContainer .about_content_textWrapper__subtitle.subtitle__active::before {
+  width: 100%;
+}
+
+#about .about_content_textWrapper__subtitleContainer .about_content_textWrapper__subtitle:hover::before {
+  width: 100%;
+}
+
+#about .subtitle__active::before {
+  width: 100%;
+}
+
+#about .about_content_textWrapper__text {
+  margin-top: 4px;
+  font-size: 1.2rem;
+}
 /*# sourceMappingURL=styles.css.map */

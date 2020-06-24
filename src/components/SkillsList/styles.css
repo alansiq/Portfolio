@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500;600&family=Lustria&family=Hind+Guntur&display=swap");
+.skill_card__default {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-left: solid 3px #313550;
+  margin-bottom: 32px;
+}
+
+.skill_card__default .skill_card_col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-width: 80px;
+}
+
+.skill_card__default .skill_card_col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.skill_card__default .skill_card_row {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skill_card__default .skill_card_row.row1 {
+  margin: 0;
+  padding: 0;
+}
+
+.skill_card__default .skill_card_row.row2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.skill_card__default .skill_school {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-right: 0.8rem;
+}
+
+.skill_card__default .skill_course {
+  font-size: 1rem;
+  margin-right: 0.8rem;
+}
+
+.skill_card__default .skill_status {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 0.8rem;
+  border-radius: 16px;
+  padding: 4px 12px;
+}
+
+.skill_card__default .skill_status__active {
+  background-color: #EF233C;
+}
+
+.skill_card__default .skill_status__inactive {
+  background-color: #313550;
+}
+
+.skill_card__default .skill_desc {
+  font-size: 1rem;
+}
+
+.skill_card__default .skill_link {
+  margin-right: 0.8rem;
+}
+/*# sourceMappingURL=styles.css.map */

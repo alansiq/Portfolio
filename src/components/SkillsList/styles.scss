@@ -1,0 +1,78 @@
+@import '../../config/css/var';
+
+.skill_card__default {
+    display: flex;
+    justify-content: flex-start;
+
+    border-left: solid 3px $blue1;
+    margin-bottom: 32px;
+
+    .skill_card_col1 {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-width: 80px;
+    }
+    .skill_card_col2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .skill_card_row {
+        position: relative;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+
+        &.row1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        &.row2 {
+            margin: 0;
+            padding: 0;
+            margin-bottom: 16px;
+        }
+        
+    }
+
+    .skill_school {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-right: 0.8rem;
+    }
+
+    .skill_course {
+        font-size: 1rem;
+        margin-right: 0.8rem;
+    }
+
+    .skill_status {
+        align-self: flex-start;
+        font-size: 0.8rem;
+        border-radius: 16px;
+        padding: 4px 12px;
+    }
+
+    .skill_status__active {
+        background-color: $accentcolor;
+        
+    }
+
+    .skill_status__inactive {
+        background-color: $blue1;
+        
+    }
+
+    .skill_desc {
+        font-size: 1rem;
+    }
+
+    .skill_link {
+        margin-right: 0.8rem;
+    }
+}
+

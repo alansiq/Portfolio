@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500;600&family=Lustria&family=Hind+Guntur&display=swap");
+.btnContainer {
+  margin-top: 32px;
+  position: relative;
+}
+
+.btnContainer .BtnMainText {
+  position: relative;
+  width: 100%;
+  padding: 16px;
+  z-index: 2;
+}
+
+.btnContainer .BtnMainText::before {
+  position: absolute;
+  content: '';
+  width: 8px;
+  background: #EF233C;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.btnContainer .BtnMainText:hover {
+  opacity: 1;
+}
+
+.btnContainer .BtnMainText:hover::before {
+  width: 100%;
+  opacity: 1;
+}
+/*# sourceMappingURL=BtnMain.css.map */

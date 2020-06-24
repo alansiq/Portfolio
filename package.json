@@ -17,6 +17,7 @@
     "react-particles": "^0.0.3",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "react-tsparticles": "^1.16.1",
     "react-typical": "^0.1.3",
     "tsparticles": "^1.15.2",
     "typescript": "^3.9.5"

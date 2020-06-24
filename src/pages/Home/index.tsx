@@ -4,7 +4,7 @@ import ParagraphTypical from '../../components/Typical/ParagraphTypical';
 import BtnMain from '../../components/buttons/BtnMain';
 import SkillsList from '../../components/SkillsList/index';
 import Portrait from '../../assets/imgAlan.png';
-
+import SkyParticles from '../../components/SkyParticles';
 
 
 
@@ -29,8 +29,10 @@ const Home = () => {
                     <BtnMain
                         text="My work"
                     />
+                    <SkyParticles />
 
                 </div>
+
             </section>
 
 

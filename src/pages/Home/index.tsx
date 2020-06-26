@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ParagraphTypical from '../../components/Typical/ParagraphTypical';
 import BtnMain from '../../components/buttons/BtnMain';
 import SkillsList from '../../components/SkillsList/index';
+import { Tab } from '../../components/Tab/index';
 import Portrait from '../../assets/imgAlan.png';
 import SkyParticles from '../../components/SkyParticles';
 
@@ -44,15 +45,18 @@ const Home = () => {
                 <h1 className="about_title">About me</h1>
                 <div className="about_content">
                     <div className="about_content_textWrapper">
-                        
+
                         <h2 className="about_content_textWrapper__title">Who?</h2>
-                    
+
                         <p className="about_content_textWrapper__text" > Front-end Engineer with a UX/UI Designer mindset. I can participate in every stage of your digital product development, from discovery to development. As a UI/UX Designer, I'll cover the prototyping and research analysis stages and also develop a functional application.</p>
 
+                        <Tab
+                            tabs={["Skills", "Past work"]}
+                            components={[<SkillsList />]}
+                        />
 
-                        <SkillsList />
-                        
-                        
+
+
                     </div>
 
 
@@ -63,6 +67,7 @@ const Home = () => {
                 </div>
 
             </section>
+
 
 
         </>

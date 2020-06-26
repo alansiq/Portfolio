@@ -4,7 +4,7 @@ import './styles.css';
 
 type TabProps = {
     tabs: string[],
-    components: any[],
+    components ?: any[],
 }
 
 export const Tab: FunctionComponent<TabProps> = ({ tabs, components }) => {
@@ -37,14 +37,13 @@ export const Tab: FunctionComponent<TabProps> = ({ tabs, components }) => {
             <div className="tabcomponent_tabrow">
             {tabs.map((tab, index ) => (
                     
-                    <Link onClick={()=> handleTabPress(index)} key={index} id={`tab_${index}`} className={`tabcomponent_tabtext tabcomponent_tablink`} to={`#${tab}`}>
+                    <a onClick={()=> handleTabPress(index)} key={index} id={`tab_${index}`} className={`tabcomponent_tabtext tabcomponent_tablink`}>
                         {tab}
-                    </Link>
+                    </a>
                 )
             )}
             </div>
-            {components[currentActive]}
-
+            { components ? components[currentActive] : "Empty"}
             
         </>
     )

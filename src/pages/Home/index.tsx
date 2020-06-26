@@ -1,10 +1,14 @@
 import React from 'react';
 import './styles.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+
 import ParagraphTypical from '../../components/Typical/ParagraphTypical';
 import BtnMain from '../../components/buttons/BtnMain';
 import SkillsList from '../../components/SkillsList/index';
 import Portrait from '../../assets/imgAlan.png';
 import SkyParticles from '../../components/SkyParticles';
+
 
 
 
@@ -45,12 +49,9 @@ const Home = () => {
                     
                         <p className="about_content_textWrapper__text" > Front-end Engineer with a UX/UI Designer mindset. I can participate in every stage of your digital product development, from discovery to development. As a UI/UX Designer, I'll cover the prototyping and research analysis stages and also develop a functional application.</p>
 
-                        <div className="about_content_textWrapper__subtitleContainer ">
-                        <h2 className="about_content_textWrapper__subtitle subtitle__active">Skills</h2>
-                        <h2 className="about_content_textWrapper__subtitle">Past work</h2>
-                        </div>
-                        
+
                         <SkillsList />
+                        
                         
                     </div>
 

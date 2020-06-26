@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500;600&family=Lustria&family=Hind+Guntur&display=swap");
+.tabcomponent_tablink {
+  position: relative;
+  font-size: 1.8rem;
+  margin-right: 16px;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+.tabcomponent_tablink:hover {
+  opacity: 1;
+}
+
+.tabcomponent_tablink::before {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 4px;
+  background: #EF233C;
+  bottom: 0;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.tabcomponent_tablink.tabcomponent_tabtext__active::before {
+  width: 100%;
+}
+
+.tabcomponent_tablink:hover::before {
+  width: 100%;
+}
+
+.tabcomponent_tablink.active_tab::before {
+  width: 100%;
+}
+
+.tabcomponent_tabrow {
+  margin-bottom: 32px;
+}
+
+.hiddenTabComponent {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */

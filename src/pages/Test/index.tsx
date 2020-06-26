@@ -1,16 +1,23 @@
 import React from "react";
-import SkyParticles from "../../components/SkyParticles";
+import { Tab } from "../../components/Tab/index";
+import './styles.css';
+import SkillsList from '../../components/SkillsList';
+
 
 
 export default function Test() {
   return (
 
-      <>
-
-      <SkyParticles>
-      <h1>Hello world, this is a test page</h1>
-      <h2>teste</h2>
-      </SkyParticles>
-      </>
+    <>
+      <div id="testmain">
+        <div>
+          <Tab
+            tabs={["Skills", "Hello"]}
+            components={[<SkillsList />, <h1>Hello</h1>]}
+          />
+        </div>
+      </div>
+    </>
   );
 }
+

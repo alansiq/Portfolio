@@ -44,9 +44,9 @@ const SkillsList = (props: Props) => {
 
     return (
         <>
-            {getSkills.map(skill => (
+            {getSkills.map((skill, skillIndex) => (
 
-                <div className="skill_card__default">
+                <div key={skillIndex} className="skill_card__default">
                     <div className="skill_card_col1">
                         <img src={skill.flag} alt={skill.flag} />
                     </div>

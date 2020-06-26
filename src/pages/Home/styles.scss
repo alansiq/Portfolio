@@ -99,54 +99,6 @@
         }
     }
 
-    .about_content_textWrapper__subtitleContainer {
-        position: relative;
-        display: flex;
-        margin-top: 32px;
-        margin-bottom: 32px;
-        
-      
-        .about_content_textWrapper__subtitle{
-            position: relative;
-            font-size: 1.8rem;
-            margin-right: 16px;
-            transition: all 0.1s;
-            cursor: pointer;
-
-
-            &::before {
-                position: absolute;
-                content: '';
-                width: 0%;
-                height: 4px;
-                background: $accentcolor;
-                bottom: 0;
-                transition: all 0.1s;
-            }
-
-            &.subtitle__active {
-                &::before {
-                    width: 100%;
-                }
-            }
-
-            &:hover {
-                &::before {
-                    width: 100%;
-                }
-            }
-        }
-
-        
-
-    }
-
-    .subtitle__active {
-        &::before {
-            width: 100%;
-        }
-    }
-
     .about_content_textWrapper__text {
         margin-top: 4px;
         font-size: 1.2rem;
